@@ -19,26 +19,26 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__top">
-      <div class="container">
+  <header class="header"> <!-- хедер состоит их 2х частей (верхняя и нижняя) создадим общий хедор с х.топ и х.контент-->
+    <div class="header__top"> <!--з элемента (тел, эмейл, консультация (добавим с помощью ссылки)-->
+      <div class="container"> <!--Создадим контейнер для всего сайта-->
         <div class="header__contacts">
-          <a class="header__phone" href="tel:380977777777">+38 (097) 777 77 77</a>
-          <a class="header__email" href="#">mywebsite@gmail.com</a>
-          <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная
-            консультация</a>
+          <a class="header__phone" href="tel:380977777777">+38 (097) 777 77 77</a> <!-- добавим ссылке  в хедере-->
+          <a class="header__email" href="#">mywebsite@gmail.com</a> <!-- добавим ссылке  в хедере-->
+          <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная 
+            консультация</a> <!-- добавим ссылке  в хедере-->
         </div>
       </div>
     </div>
-    <div class="header__content">
+    <div class="header__content"> <!-- общий класс для контента в хедере-->
       <div class="container">
         <div class="header__content-inner">
-          <div class="header__logo">
+          <div class="header__logo"> <!-- отдельный класс для логотипа в хедере-->
             <a href="#">
               <img src="img/logo1.png" alt="">
             </a>
           </div>
-          <nav class="menu">
+          <nav class="menu"> <!-- навигация для меню-->
             <div class="header__btn-menu">
               <span class="icon-bars"></span>
             </div>

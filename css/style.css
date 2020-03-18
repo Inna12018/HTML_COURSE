@@ -1,20 +1,20 @@
 *{
-  box-sizing: border-box;
+  box-sizing: border-box; /* для всех элементов падинги не будут увеличивать, а вычитать внутри*/
 }
 a{
-  text-decoration: none;
-  display: inline-block;
+  text-decoration: none; /* чтобы небыло подчеркиваний*/
+  display: inline-block; /* ссылки практически всегда строчно-блочными*/
 }
 ul,
 li{
-  list-style: none;
+  list-style: none; /* уберем маркеры*/
   margin: 0;
   padding: 0;
 }
 .container{
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px; 
+  max-width: 1170px; /* ставим макисмальную ширину, чтобы при меньшей ширине не появился нижний скрол*/
+  margin: 0 auto;  /* центрируем*/
+  padding: 0 15px; /* чтобы в дальнейшем не прилипал к стенкам тел, планшетов и тд*/
 }
 body{
   font-family: 'Lobster', serif; 
@@ -30,8 +30,8 @@ header{
   background-color: #73b402;
 } 
 .header__btn{
-  float: right;
-  line-height: 36px;
+  float: right; /* тк элементы строчно-блочные, то указав   float: right наш элемент уедет вправо*/
+  line-height: 36px; 
   color: #1b1b1b;
   background-color: #ffc222;
   padding: 5px 20px 4px 50px;
@@ -39,7 +39,7 @@ header{
   display: block;
   position: relative;
 }
-.header__btn:before{
+.header__btn: before {
   content: "\f0b1";
   font-family: 'icomoon';
   position: absolute;
@@ -55,7 +55,7 @@ header{
 .header__email{
   color: #fff;
   letter-spacing: 0.25px;
-  line-height: 45px;
+  line-height: 45px; /*делаем высоту страки, как у кнопки, чтобы были на одном уровне*/
   position: relative;
 }
 .header__phone{
